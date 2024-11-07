@@ -28,3 +28,7 @@ html::-webkit-scrollbar-thumb{
     background-color: #9D8189;
     border-radius: 2rem;
 }
+
+html {
+    scroll-behavior: smooth;
+}
