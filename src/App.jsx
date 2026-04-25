@@ -5,6 +5,8 @@ import heroImg from './assets/hero.png'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import CreateGlobal from "@/src/components/CreateGlobal";
+import CustomCursor from './components/CustomCursor';
 import { keepTheme } from './utils/themes'
 
 function App() {
@@ -17,8 +19,11 @@ function App() {
   return (
     <>
       <Navbar />
+      <CustomCursor />
+
       <main>
         <Hero />
+        <CreateGlobal />
         <About />
       </main>
       

@@ -1,3 +1,4 @@
+
 export default function Hero() {
     return (
         <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-20 relative overflow-hidden">
