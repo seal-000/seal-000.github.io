@@ -28,7 +28,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'py-4 bg-opacity-80 backdrop-blur-md border-b border-light/10 dark:border-dark/10'
+          ? 'py-4 bg-opacity-80 backdrop-blur-md border-b'
           : 'py-6 bg-transparent'
       }`}
       style={{
@@ -36,7 +36,7 @@ export default function Navbar() {
       }}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="text-xl font-sans font-bold -tracking-[1px] text-light">
+        <a href="#hero" className="text-xl font-sans font-bold  tracking-[0.1em]">
           MIRANDA.CASAN
         </a>
 
@@ -46,14 +46,14 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-[13px] font-medium uppercase tracking-[1px] text-dim hover:text-light transition-colors"
+              className="text-[13px] font-medium uppercase tracking-[1px] text-dim transition-colors"
             >
               {link.name}
             </a>
           ))}
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-light/10 dark:hover:bg-dark/10 transition-colors"
+            className="p-2 rounded-full transition-colors"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
@@ -78,7 +78,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className={`absolute top-full left-0 w-full p-6 md:hidden shadow-xl border-b border-light/10 dark:border-dark/10`}
+            className={`absolute top-full left-0 w-full p-6 md:hidden shadow-xl border-b`}
             style={{
               backgroundColor: theme === 'dark' ? '#0e100f' : '#fffce1'
             }}
