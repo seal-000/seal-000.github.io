@@ -1,19 +1,33 @@
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
+import Navbar from '@/src/components/Navbar'
+import Hero from '@/src/components/Hero'
+import About from '@/src/components/About'
 import CreateGlobal from "@/src/components/CreateGlobal";
-import CustomCursor from './components/CustomCursor';
-import { keepTheme } from './utils/themes'
+import CustomCursor from '@/src/components/CustomCursor';
+import { keepTheme } from '@/src/utils/themes'
+import Projects from '@/src/components/Projects'
+import Experience from '@/src/components/Experience';
+import Contact from '@/src/components/Contact';
 
 function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
     keepTheme()
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = anchor.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+          });
+        }
+      });
+    });
   }, [])
 
   return (
@@ -23,8 +37,10 @@ function App() {
 
       <main>
         <Hero />
-        <CreateGlobal />
         <About />
+        <Projects />
+        <Experience />
+        <Contact />
       </main>
       
     </>
