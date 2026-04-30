@@ -37,3 +37,15 @@ body {
   background: var(--theme-scrollbar-thumb);
   border-radius: 4px;
 }
+
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color:  var(--theme-dark-text, var(--theme-light-text));
+}
+
+textarea::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: var(--theme-dark-text, var(--theme-light-text));
+}
