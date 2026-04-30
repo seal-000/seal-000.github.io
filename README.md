@@ -1,16 +1,28 @@
-# React + Vite
+# Full-Stack Developer Portfolio 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This interactive web application is designed to showcase my projects, skills, and experience as a full-stack engineer 
 
-Currently, two official plugins are available:
+## 🚀 The Portfolio Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The portfolio itself is built with a focus on high performance, modern design, and fluid user interactions using the following frontend technologies:
 
-## React Compiler
+- **Framework:** React
+- **Styling:** Tailwind 
+- **Animations:** GSAP
+- **Icons:** Lucide 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## 🛠️ Local Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run this portfolio locally on your machine:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/portfolio-2026.git
+
+# Install dependencies
+npm install
+
+# Start the Vite development server
+npm run dev
+```
