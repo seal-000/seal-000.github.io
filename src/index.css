@@ -11,7 +11,7 @@
 
 .theme-light {
   --theme-light-text: #0e100f;
-  --theme-light-background: #fffce1;
+  --theme-light-background: #efefef;
   --theme-text-dim: rgba(14, 16, 15, 0.6);
   --theme-border: rgba(14, 16, 15, 0.1);
   --theme-scrollbar-thumb: #0e100f;

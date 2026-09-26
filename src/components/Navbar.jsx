@@ -28,11 +28,13 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'py-4 bg-opacity-80 backdrop-blur-md border-b'
+          ? 'py-4 backdrop-blur-md border-b border-current/10'
           : 'py-6 bg-transparent'
       }`}
       style={{
-        backgroundColor: isScrolled ? (theme === 'dark' ? '#0e100fcc' : '#fffce1cc') : 'transparent'
+        backgroundColor: isScrolled
+          ? (theme === 'dark' ? 'rgba(14, 16, 15, 0.35)' : 'rgba(239, 239, 239, 0.45)')
+          : 'transparent'
       }}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">

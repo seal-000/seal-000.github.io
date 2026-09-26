@@ -4,8 +4,9 @@ export default function Experience() {
     const experiences = [
         {
             company: "Nunsys",
-            role: "Microsoft Dynamics Developer",
-            date: "March 2025 - Present",
+            location: "Remote",
+            role: "Software Engineer",
+            date: "April 2025 - Present",
             description: [
                 "Developed 34 Power Automate flows and a Power Apps application for an enterprise manufacturing client, automating manual business workflows and reducing operational overhead across key business processes",
                 "Built and integrated 4 React components into Power Apps using the PCF framework, enhancing UI interactivity for a factory floor business application",
@@ -16,8 +17,9 @@ export default function Experience() {
         },
         {
             company: "DNR Studios",
+            location: "New York, NY",
             role: "Software Engineer Intern",
-            date: "July 2024 - August 2024",
+            date: "July 2022 - August 2022",
             description: [
                 'Built a fully functional web-based solitaire game from scratch using JavaScript, HTML, and CSS, implementing interactive drag-and-drop card mechanics',
                 'Redesigned a podcast application UI in Figma and developed cross-platform mobile builds for iOS and Android using Xamarin',
@@ -38,7 +40,7 @@ export default function Experience() {
                     </div>
 
                     <div className="md:w-2/3 space-y-24">
-                        {experiences.map((exp, idx) => (
+                        {experiences.map((exp) => (
                             <div key={exp.company} className="experience-row group relative border-b pb-20">
                                 <div className="flex flex-col md:flex-row md:items-start justify-between mb-8 gap-4">
                                     <div>
@@ -46,7 +48,7 @@ export default function Experience() {
                                             {exp.role}
                                         </h3>
                                         <p className="text-xs uppercase tracking-[0.2em] font-bold mt-2">
-                                            {exp.company}
+                                            {exp.company} <span className="opacity-50">/</span> {exp.location}
                                         </p>
                                     </div>
                                     <span className="text-xs font-mono uppercase tracking-widest">

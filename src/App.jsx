@@ -8,6 +8,7 @@ import { keepTheme } from '@/src/utils/themes'
 import Projects from '@/src/components/Projects'
 import Experience from '@/src/components/Experience';
 import Contact from '@/src/components/Contact';
+import Socials from '@/src/components/Socials';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,6 +42,7 @@ function App() {
         <Projects />
         <Experience />
         <Contact />
+        <Socials />
       </main>
       
     </>
