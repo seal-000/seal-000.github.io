@@ -37,7 +37,7 @@ export default function Contact() {
                                 type="email"
                                 required
                                 className="w-full bg-transparent border-b py-6 outline-none transition-colors text-lg font-light"
-                                placeholder="example@email.com"
+                                placeholder="your@email.com"
                             />
                         </div>
             

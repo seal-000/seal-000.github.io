@@ -13,6 +13,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@tabler/core": "^1.6.0",
+    "@tabler/icons-react": "^3.48.0",
     "@tailwindcss/vite": "^4.2.2",
     "clsx": "^2.1.1",
     "gh-pages": "^6.3.0",
