@@ -18,7 +18,7 @@ const socialLinks = [
     {
         label: 'LinkedIn',
         handle: 'in/miranda-casan',
-        href: 'https://www.linkedin.com/in/miranda-casan/',
+        href: 'https://www.linkedin.com/in/mirandacasan/',
         icon: IconBrandLinkedinFilled,
     },
 ];
